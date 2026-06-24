@@ -1,0 +1,28 @@
+h1, h2 {
+  color: palevioletred;
+}
+
+p {
+  color: rgb(42, 0, 28);
+}
+
+ul {
+  border: 6px solidrgb(95, 12, 32)e;
+}
+
+ol {
+  border: 6px solid rgb(78, 47, 200);
+}
+
+ol, ul {
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+h1, strong {
+  color: pink;
+}
+
+em {
+  color: rgb(18, 0, 0);
+}
