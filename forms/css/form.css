@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* form styling */
+
+body {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    background: #f7f4f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+#wrapper {
+    width: 70%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #ead7e1;
+}
+
+h1 {
+    color: #C2185B;
+}
+
+.instructions {
+    background: #fff5d6;
+    border-left: 6px solid #C2185B;
+    padding: 12px;
+}
+
+fieldset {
+    border: 2px solid #C2185B;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #8E174B;
+    padding: 0 8px;
+}
+
+#formcol1 li {
+    list-style: none;
+    margin-bottom: 14px;
+}
+
+label {
+    margin-right: .5em;
+    width: 8em;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 6px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    min-width: 220px;
+}
+
+#formcol1 input.reqfield {
+    background: #FFF5D6;
+}
+
+.radio-group span {
+    margin-right: 20px;
+}
+
+.radio-group label {
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+}
+
+input:focus,
+input:active,
+input:focus + label,
+input:active + label {
+    color: #000;
+    background-color: #ffe9f4;
+    outline: 3px solid #C2185B;
+}
+
+.submit-button input {
+    background: #C2185B;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button input:focus,
+.submit-button input:hover {
+    background: #8E174B;
+    outline: 3px solid #000;
+}
+
+@media (max-width: 700px) {
+    #wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        width: auto;
+        margin-bottom: 4px;
+    }
+
+    input[type="text"] {
+        width: 95%;
+        min-width: 0;
+    }
+}
