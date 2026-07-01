@@ -1,78 +1,107 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa;
-  color: #222;
+body{
+    margin:0;
+    background:#eef2f7;
+    color:#222;
+    font-family:"Open Sans",sans-serif;
+    line-height:1.6;
 }
 
-header {
-  padding: 2rem;
-  text-align: center;
-  background-color: #243b53;
-  color: white;
+header{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#1f3c88;
+    color:white;
+    padding:30px;
 }
 
-h1, h2 {
-  font-family: "Merriweather", Georgia, serif;
+header h1{
+    margin:0;
+    font-family:"Merriweather",serif;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 2rem;
+header p{
+    margin-top:10px;
 }
 
-.card {
-  background-color: white;
-  padding: 1.5rem;
-  border: 2px solid #d9e2ec;
-  border-radius: 12px;
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:25px;
 }
 
-.card ul,
-.card ol {
-  padding: 1rem 2rem;
-  border-radius: 8px;
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+    display:flex;
+    flex-direction:column;
 }
 
-.card ul {
-  border: 3px solid #2f80ed;
+h2{
+    font-family:"Merriweather",serif;
+    color:#1f3c88;
 }
 
-.card ol {
-  border: 3px solid #9b51e0;
+h3{
+    color:#00695c;
 }
 
-strong {
-  color: #6f2dbd;
+ul{
+    border:3px solid #2f80ed;
+    padding:20px;
+    border-radius:8px;
 }
 
-em {
-  color: #555;
+ol{
+    border:3px solid #9b51e0;
+    padding:20px;
+    border-radius:8px;
 }
 
-/* Below 900px: two columns */
-@media screen and (max-width: 900px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+strong{
+    color:#8e24aa;
 }
 
-/* Below 640px: one column */
-@media screen and (max-width: 640px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
+em{
+    color:#666;
+}
 
-  header {
-    padding: 1.5rem 1rem;
-  }
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f3c88;
+    color:white;
+}
 
-  .card {
-    padding: 1rem;
-  }
+/* Tablet */
+
+@media (max-width:900px){
+
+.grid-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Phone */
+
+@media (max-width:640px){
+
+.grid-container{
+grid-template-columns:1fr;
+padding:15px;
+}
+
+header{
+padding:20px;
+}
+
+.card{
+padding:15px;
+}
+
 }
