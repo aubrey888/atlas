@@ -1,107 +1,137 @@
-body{
-    margin:0;
-    background:#eef2f7;
-    color:#222;
-    font-family:"Open Sans",sans-serif;
-    line-height:1.6;
+body {
+    margin: 0;
+    background: #f7f4f6;
+    color: #2b2b2b;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7;
 }
 
-header{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background:#1f3c88;
-    color:white;
-    padding:30px;
+/*heading - try and pink */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #C2185B;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-header h1{
-    margin:0;
-    font-family:"Merriweather",serif;
+header h1 {
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-size: 2.6rem;
 }
 
-header p{
-    margin-top:10px;
+header p {
+    margin-top: 12px;
+    font-size: 1.15rem;
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    padding:25px;
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
 }
 
-.card{
-    background:white;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 3px 8px rgba(0,0,0,.15);
-    display:flex;
-    flex-direction:column;
+/* card layout */
+
+.card {
+    background: white;
+    border: 2px solid #ead7e1;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
-h2{
-    font-family:"Merriweather",serif;
-    color:#1f3c88;
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
 }
 
-h3{
-    color:#00695c;
+/* ---------- diff fonts ---------- */
+
+h2 {
+    font-family: "Merriweather", serif;
+    color: #C2185B;
+    margin-top: 0;
 }
 
-ul{
-    border:3px solid #2f80ed;
-    padding:20px;
-    border-radius:8px;
+h3 {
+    color: #8E174B;
 }
 
-ol{
-    border:3px solid #9b51e0;
-    padding:20px;
-    border-radius:8px;
+strong {
+    color: #C2185B;
 }
 
-strong{
-    color:#8e24aa;
+em {
+    color: #666;
 }
 
-em{
-    color:#666;
+
+
+ul {
+    border: 3px solid #C2185B;
+    padding: 18px 30px;
+    border-radius: 10px;
+    background: #fff9fb;
 }
 
-footer{
-    text-align:center;
-    padding:20px;
-    background:#1f3c88;
-    color:white;
+ol {
+    border: 3px solid #8E174B;
+    padding: 18px 30px;
+    border-radius: 10px;
+    background: #fff9fb;
 }
 
-/* Tablet */
+/* ---------- Footer ---------- */
 
-@media (max-width:900px){
-
-.grid-container{
-grid-template-columns:repeat(2,1fr);
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: #C2185B;
+    color: white;
+    padding: 20px;
 }
 
+/* ipad? maybe? */
+
+@media (max-width: 900px) {
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-/* Phone */
 
-@media (max-width:640px){
 
-.grid-container{
-grid-template-columns:1fr;
-padding:15px;
-}
+@media (max-width: 640px) {
 
-header{
-padding:20px;
-}
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
 
-.card{
-padding:15px;
-}
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
 
 }
