@@ -1,28 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: #243b53;
+  color: white;
+}
+
 h1, h2 {
-  color: palevioletred;
+  font-family: "Merriweather", Georgia, serif;
 }
 
-p {
-  color: rgb(42, 0, 28);
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
-ul {
-  border: 6px solidrgb(95, 12, 32)e;
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border: 2px solid #d9e2ec;
+  border-radius: 12px;
 }
 
-ol {
-  border: 6px solid rgb(78, 47, 200);
+.card ul,
+.card ol {
+  padding: 1rem 2rem;
+  border-radius: 8px;
 }
 
-ol, ul {
-  padding: 5px 20px;
-  border-radius: 4px;
+.card ul {
+  border: 3px solid #2f80ed;
 }
 
-h1, strong {
-  color: pink;
+.card ol {
+  border: 3px solid #9b51e0;
+}
+
+strong {
+  color: #6f2dbd;
 }
 
 em {
-  color: rgb(18, 0, 0);
+  color: #555;
+}
+
+/* Below 900px: two columns */
+@media screen and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 640px: one column */
+@media screen and (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
 }
